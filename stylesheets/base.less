@@ -24,7 +24,6 @@
   .gutter {
     background-color: @syntax-gutter-background-color;
     color: @syntax-gutter-text-color;
-    border-right: 1px solid @syntax-gutter-text-color;
 
     .line-number {
       &.cursor-line {
@@ -54,6 +53,12 @@
 
   .selection .region {
     background-color: @syntax-selection-color;
+  }
+
+  .line {
+    &.cursor-line {
+      background-color: @syntax-selection-color;
+    }
   }
 }
 
