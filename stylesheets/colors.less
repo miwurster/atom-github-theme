@@ -1,15 +1,26 @@
-// These colors are specific to the theme. Do not use in a package!
-
-@very-light-gray: #c5c8c6;
-@light-gray: #969896;
-@gray: #373b41;
-@dark-gray: #282a2e;
-@very-dark-gray: #1d1f21;
-
-@cyan: #8abeb7;
-@blue: #81a2be;
-@purple: #b294bb;
-@green: #b5bd68;
-@red: #cc6666;
-@orange: #de935f;
-@light-orange: #f0c674;
+@gray-darker: lighten(#000, 13.5%); // #222
+@gray-dark: lighten(#000, 20%); // #333
+@gray: lighten(#000, 33.5%); // #555
+@gray-light: lighten(#000, 46.7%); // #777
+@gray-lighter: lighten(#000, 80%); // #eee
+@dark-blue: #000080;
+@blue: #0000ff;
+@green: #008000;
+@turquoise: #008080;
+@yellow: #ffff00;
+@base-text-color: #333;
+@base-background-color: #f8f8ff;
+@selection-color: darken(@base-background-color, 5%);
+@cursor-color: #444;
+@cursor-line-color: #ffffd7;
+@wrap-guide-color: @gray-lighter;
+@indent-guide-color: lighten(@gray-lighter, 10%);
+@invisible-character-color: @gray-light;
+@gutter-text-color: @gray-light;
+@gutter-text-color-selected: @gutter-text-color;
+@gutter-background-color: @base-background-color;
+@gutter-background-color-selected: @selection-color;
+@comment-color: #999999;
+@search-results: @yellow;
+@search-result: #ccccff;
+@numbers: #009999;
