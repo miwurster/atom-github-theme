@@ -1,9 +1,9 @@
 {
   "name": "github-theme",
   "theme": "syntax",
-  "version": "0.0.0",
-  "description": "A short description of your syntax theme",
-  "repository": "https://github.com/atom/github-theme",
+  "version": "0.1.0",
+  "description": "GitHub's syntax theme for Atom",
+  "repository": "https://github.com/miwurster/github-theme",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
