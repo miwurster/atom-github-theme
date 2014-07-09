@@ -72,8 +72,14 @@
 }
 
 .comment {
-  color: @comment-color;
-  font-style: italic;
+  &.line {
+    color: @comment-color;
+  }
+
+  &.block {
+    color: @comment-documentation;
+    font-style: normal;
+  }
 }
 
 .entity {
@@ -104,6 +110,11 @@
 
   &.other.unit {
 
+  }
+
+  &.phpdoc {
+    color: @comment-documentation;
+    font-weight: normal;
   }
 }
 
@@ -175,8 +186,7 @@
 .punctuation {
   &.definition {
     &.comment {
-      color: @comment-color;
-      font-style: normal;
+
     }
 
     &.string,
@@ -244,8 +254,8 @@
   }
 
   &.name.tag {
-    color: @yellow;
-    text-decoration: underline;
+    color: @base-text-color;
+    font-weight: bold;
   }
 
   &.other.attribute-name {
@@ -277,6 +287,10 @@
   &.separator {
     background-color: @gray;
     color: @base-text-color;
+  }
+
+  &.tag {
+    font-weight: bold;
   }
 }
 
