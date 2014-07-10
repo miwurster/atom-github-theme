@@ -2,7 +2,7 @@
     "name": "github-theme",
     "theme": "syntax",
     "version": "0.1.0",
-    "description": "GitHub's syntax theme for Atom",
+    "description": "GitHub syntax theme for Atom",
     "repository": "https://github.com/miwurster/github-theme",
     "license": "MIT",
     "engines": {

@@ -1,3 +1,3 @@
 # GitHub Theme
 
-> GitHub's syntax theme for Atom.
+> GitHub syntax theme for Atom.
