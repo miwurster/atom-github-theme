@@ -1,0 +1,207 @@
+@import "colors";
+
+/////////////////////////
+// Common Syntax Style //
+/////////////////////////
+
+.source, .text {
+  color: @default-plain-text;
+}
+
+.comment {
+  color: @default-comments;
+  font-style: italic;
+
+  &.documentation {
+    color: @default-comments-documentation;
+    font-style: normal;
+
+    .punctuation.definition.comment {
+      color: @default-comments-documentation !important;
+      font-style: normal;
+    }
+  }
+}
+
+.entity {
+  &.name {
+    color: @default-entities;
+  }
+}
+
+.keyword {
+  font-weight: bold;
+
+  &.operator {
+    color: @default-operators !important;
+    font-weight: normal !important;
+  }
+
+  &.control {
+    color: @default-plain-text;
+
+    &.import {
+      color: @default-entities;
+      font-weight: normal;
+    }
+  }
+}
+
+.storage {
+  color: @default-plain-text;
+  font-weight: bold;
+
+  &.type {
+    &.function, &.class, &.interface {
+      color: @default-modifiers;
+    }
+  }
+}
+
+.constant {
+  color: @default-entities;
+
+  &.character.entity {
+    color: @default-plain-text;
+    font-weight: bold;
+  }
+
+  &.numeric {
+    color: @default-numbers;
+  }
+
+  &.language {
+    font-weight: bold;
+  }
+}
+
+.variable {
+  color: @default-variables;
+
+  &.language {
+    color: @default-punctuations;
+    font-weight: bold;
+  }
+}
+
+.string {
+  color: @default-strings;
+
+  &.regexp {
+    color: @default-operators;
+    font-weight: bold;
+
+    .punctuation {
+      color: @default-operators;
+    }
+  }
+
+  .constant {
+    color: @default-strings;
+  }
+}
+
+.punctuation {
+  color: @default-punctuations;
+
+  &.inheritance {
+    color: @default-entities;
+  }
+
+  &.definition {
+    &.comment {
+      color: @default-comments;
+    }
+
+    &.string {
+      color: @default-strings;
+    }
+
+    &.variable {
+      color: @default-variables;
+    }
+  }
+}
+
+.support {
+  &.class,
+  &.namespace,
+  &.function {
+    color: @default-entities;
+  }
+
+  &.function.construct {
+    color: @default-modifiers;
+    font-weight: bold;
+  }
+
+}
+
+.entity {
+  &.name.tag {
+    color: @default-variables;
+  }
+
+  &.other.attribute-name {
+    color: @default-entities;
+  }
+}
+
+.meta {
+  &.brace,
+  &.delimiter {
+    color: @default-punctuations;
+  }
+
+  .storage {
+    font-weight: bold;
+  }
+
+  &.class {
+    .keyword {
+      color: @default-punctuations !important;
+      font-weight: bold !important;
+    }
+  }
+
+  &.function-call,
+  &.arguments,
+  &.other {
+    color: @default-entities;
+  }
+
+  &.tag {
+    &.structure,
+    &.xml,
+    &.block,
+    &.inline {
+      .punctuation.tag {
+        color: @default-variables;
+      }
+    }
+  }
+
+  &.tag.sgml {
+    .doctype, .documentroot {
+      color: @default-doctype;
+      font-style: italic;
+      font-weight: normal;
+    }
+    .punctuation.tag {
+      color: @default-doctype;
+    }
+  }
+
+  &.tag.preprocessor {
+    .punctuation.tag, .entity.tag {
+      color: @default-meta-tags;
+    }
+    .entity {
+      color: @default-plain-text;
+    }
+  }
+
+  .punctuation.embedded {
+    color: @default-meta-tags !important;
+  }
+}
