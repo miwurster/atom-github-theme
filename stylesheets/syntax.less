@@ -33,8 +33,8 @@
   font-weight: bold;
 
   &.operator {
-    color: @default-operators !important;
-    font-weight: normal !important;
+    color: @default-operators;
+    font-weight: normal;
   }
 
   &.control {
@@ -52,8 +52,23 @@
   font-weight: bold;
 
   &.type {
+    color: @default-entities;
+    font-weight: normal;
+
     &.function, &.class, &.interface {
       color: @default-modifiers;
+      font-weight: bold;
+    }
+
+    &.primitive {
+      color: @default-modifiers;
+      font-weight: bold;
+    }
+
+    &.annotation {
+      color: @default-annotations;
+      font-weight: normal;
+      font-style: italic;
     }
   }
 }
@@ -72,6 +87,14 @@
 
   &.language {
     font-weight: bold;
+  }
+
+  &.other {
+    color: @default-plain-text;
+  }
+
+  &.enum {
+    color: @default-variables;
   }
 }
 
@@ -150,6 +173,10 @@
   &.other.attribute-name {
     color: @default-entities;
   }
+
+  &.inherited-class {
+    color: @default-entities;
+  }
 }
 
 .meta {
@@ -158,14 +185,10 @@
     color: @default-punctuations;
   }
 
-  .storage {
-    font-weight: bold;
-  }
-
-  &.class {
-    .keyword {
-      color: @default-punctuations !important;
-      font-weight: bold !important;
+  &.import {
+    .storage.modifier {
+      color: @default-variables;
+      font-weight: normal;
     }
   }
 
@@ -173,6 +196,12 @@
   &.arguments,
   &.other {
     color: @default-entities;
+  }
+
+  &.method-call {
+    .method {
+      color: @default-entities;
+    }
   }
 
   &.tag {
