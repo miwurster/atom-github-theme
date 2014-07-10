@@ -3,7 +3,7 @@
   "theme": "syntax",
   "version": "0.1.0",
   "description": "GitHub syntax theme for Atom",
-  "repository": "https://github.com/miwurster/github-theme",
+  "repository": "https://github.com/miwurster/github-theme.git",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
