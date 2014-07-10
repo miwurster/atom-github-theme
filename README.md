@@ -2,4 +2,4 @@
 
 > GitHub syntax theme for Atom.
 
-(http://miwurster.github.io/github-theme/screenshot.png)
+![GitHub Theme](http://miwurster.github.io/github-theme/screenshot.png "GitHub Theme")
