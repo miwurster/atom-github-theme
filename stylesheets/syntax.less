@@ -88,11 +88,16 @@
   color: @default-strings;
 
   &.regexp {
-    color: @default-operators;
+    color: @default-operators !important;
     font-weight: bold;
 
-    .punctuation {
+    .punctuation, .keyword, .constant {
       color: @default-operators;
+      &.definition {
+        &.string {
+          color: @default-operators;
+        }
+      }
     }
   }
 
