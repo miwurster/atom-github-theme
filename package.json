@@ -1,11 +1,11 @@
 {
   "name": "atom-github-theme",
   "theme": "syntax",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "GitHub flavored syntax theme for Atom",
   "repository": "https://github.com/miwurster/atom-github-theme",
   "license": "MIT",
   "engines": {
-    "atom": ">0.50.0"
+    "atom": ">=0.174.0 <2.0.0"
   }
 }
