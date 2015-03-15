@@ -1,4 +1,4 @@
-## v1.0.0
+## v0.2.0
 * Adaptions to latest Atom version
 
 ## v0.1.0 - First Release
