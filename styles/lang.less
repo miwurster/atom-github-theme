@@ -1,0 +1,71 @@
+// CSS, Less, Sass
+
+.css, .less, .scss {
+  .entity {
+    &.attribute-name {
+      font-weight: bold;
+    }
+  }
+}
+
+// JavaScript
+
+.js {
+  &.source,
+  .storage.modifier {
+    color: @default-variables;
+  }
+  .keyword.operator.new {
+    color: @default-plain-text;
+    font-weight: bold;
+  }
+}
+
+// PHP
+
+.php {
+  .constant.other {
+    color: @default-numbers;
+  }
+  .storage.type {
+    font-weight: bold;
+  }
+}
+
+// YAML
+
+.yaml {
+  .entity.name {
+    color: @default-plain-text;
+    font-weight: bold;
+  }
+}
+
+// Java
+
+.java {
+  .storage {
+    &.modifier {
+      color: @default-modifiers;
+      font-weight: normal;
+    }
+  }
+  .meta.class.identifier {
+    .storage.modifier {
+      font-weight: bold;
+    }
+  }
+  .meta.class.inherited,
+  .meta.class.implemented {
+    .storage.modifier {
+      color: @default-plain-text;
+      font-weight: bold;
+    }
+  }
+  .storage.type {
+    color: @default-entities;
+  }
+  .storage.type.primitive {
+    color: @default-modifiers;
+  }
+}

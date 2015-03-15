@@ -1,0 +1,48 @@
+@import "colors";
+
+// This defines all syntax variables that syntax themes must implement when they
+// include a syntax-variables.less file.
+
+// General colors
+@syntax-text-color: #1561ac;
+@syntax-background-color: #f8f8ff;
+@syntax-cursor-color: #444;
+@syntax-cursor-line-background-color: #ffffd7;
+@syntax-selection-color: darken(@syntax-background-color, 5%);
+
+// Guide colors
+@syntax-wrap-guide-color: @lighter-gray;
+@syntax-indent-guide-color: @grey300;
+@syntax-invisible-character-color: @light-gray;
+
+// For find and replace markers
+@syntax-result-marker-color: #ffff00;
+@syntax-result-marker-color-selected: #ccccff;
+
+// Gutter colors
+@syntax-gutter-text-color: @gray;
+@syntax-gutter-text-color-selected: @dark-gray;
+@syntax-gutter-background-color: @syntax-background-color;
+@syntax-gutter-background-color-selected: @syntax-selection-color;
+
+// For git diff info. i.e. in the gutter
+@syntax-color-renamed: @blue;
+@syntax-color-added: @green;
+@syntax-color-modified: @orange;
+@syntax-color-removed: @red;
+
+// Basic syntax elements
+@default-plain-text: @darker-gray;
+@default-text: #008080;
+@default-variables: #002d7a;
+@default-entities: @default-text;
+@default-modifiers: #800080;
+@default-operators: #006fe0;
+@default-punctuations: @gray900;
+@default-strings: #d14;
+@default-numbers: #099;
+@default-comments: @gray500;
+@default-comments-documentation: #dd1144;
+@default-annotations: @gray700;
+@default-meta-tags: #b85c00;
+@default-doctype: @gray;
